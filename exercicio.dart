@@ -1,3 +1,5 @@
+import 'dart:io';
+
 /***
  * 
  * ============================MEU GUIA=====================================================================================================================================================================================================
@@ -16,5 +18,12 @@
  * REF:https://medium.com/flutter-comunidade-br/introdu%C3%A7%C3%A3o-a-linguagem-de-programa%C3%A7%C3%A3o-dart-b098e4e2a41e
  * */
 void main(List<String> args) {
+  //saida de dados
   print('ola mundo');
+
+  //entrada de dados
+  //precisa importar uma biblioteca do dart (import 'dart:io')
+  print("Entrada de dados:");
+  String? a = stdin.readLineSync();
+  print("Voce digitou: $a");
 }
